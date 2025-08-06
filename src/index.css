@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-playwrite-pl: "Playwrite PL", cursive;
+  --colo1: #162cb9;
+  --colo-white: white;
+  --colo-bg: #1f2021;
+  overflow-x: hidden;
+  outline: hidden;
+  scroll-behavior: smooth;
+}
+
+nav {
+  h1 {
+    font-family: var(--font-playwrite-pl);
+  }
+
+  ul a {
+    font-family: var(--font-poppins);
+    color: var(--colo-bg);
+    font-weight: 300;
+  }
+
+  ul button {
+    font-family: var(--font-poppins);
+    color: var(--colo-bg);
+    font-weight: 300;
+  }
+}
+
+.nm {
+  font-family: var(--font-poppins);
+}
+
+#main {
+  .rounded-full {
+    font-family: var(--font-poppins);
+  }
+
+  h1 {
+    font-family: var(--font-poppins);
+  }
+
+  .info {
+    font-family: var(--font-poppins);
+  }
+
+  a {
+    font-family: var(--font-poppins);
+  }
+}
+
+#scroll {
+  font-family: var(--font-poppins);
+}
+
+#about {
+  p {
+    font-family: var(--font-poppins);
+  }
+
+  h1 {
+    font-family: var(--font-montserrat);
+  }
+}
+
+#newsList {
+  h1 {
+    font-family: var(--font-montserrat);
+  }
+
+  p {
+    font-family: var(--font-poppins);
+  }
+}
+
+#antara, #pageSport {
+  h1 {
+    font-family: var(--font-montserrat);
+  }
+
+  p {
+    font-family: var(--font-poppins);
+  }
+
+  a {
+    font-family: var(--font-poppins);
+  }
+}
+
+#footer {
+  h1, h2 {
+    font-family: var(--font-poppins);
+  }
+
+  h4 {
+    font-family: var(--font-montserrat);
+  }
+
+  h3 {
+    font-family: var(--font-poppins);
+  }
+
+  ul {
+    font-family: var(--font-poppins);
+  }
+
+  a {
+    font-family: var(--font-poppins);
+  }
+}
