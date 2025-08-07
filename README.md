@@ -8,9 +8,9 @@ Di project ini saya menggunakan:
 
 ## Fitur
 
-- Tema Gelap/Terang
-- Pencarian
-- Info cuaca hari ini
+- Tema Gelap/Terang ❌
+- Pencarian ❌
+- Info cuaca hari ini ❌
 - Responsive ✅
 
 ❌ = Comming Soon
