@@ -4,8 +4,8 @@ import React, { Suspense } from "react";
 // List Pages
 import { Layout } from "./pages/layout";
 import { PageSport } from "./pages/pageSport";
+import { PageTech } from "./pages/pageTech";
 const MainPage = React.lazy(() => import("./components/MainPage"));
-// const PageSport = React.lazy(() => import("./pages/pageSport"));
 
 function App() {
   return (
@@ -28,8 +28,8 @@ function App() {
             }
           />
           <Route path="/sport" element={<PageSport />} />
-          {/* <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
+          <Route path="/tech" element={<PageTech />} />
+          {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

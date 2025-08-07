@@ -2,6 +2,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { url } from "../lib/url";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   const [list, setList] = useState([]);
@@ -20,7 +21,7 @@ export function Footer() {
   return (
     <>
       <div
-        className="absolute top-[50rem] left-0 right-0 bg-[#181818] lg:top-[270rem] xl:top-[280rem] xl:rounded-tr-4xl xl:rounded-tl-4xl xl:mx-3"
+        className="absolute top-[230rem] left-0 right-0 bg-[#181818] lg:top-[270rem] xl:top-[280rem] xl:rounded-tr-4xl xl:rounded-tl-4xl xl:mx-3"
         id="footer"
       >
         <footer className="flex justify-between items-start pl-10 flex-col gap-10 py-10 xl:items-center xl:px-10 xl:flex-col">
@@ -60,15 +61,11 @@ export function Footer() {
                   Blog Tema
                 </h4>
                 <ul>
-                  <li>
-                    <a href="" className="text-white font-light">
-                      Blog Sport
-                    </a>
+                  <li className="text-white font-light">
+                    <Link to={"/sport"}>Blog Sport</Link>
                   </li>
-                  <li>
-                    <a href="" className="text-white font-light">
-                      Blog Teknologi
-                    </a>
+                  <li className="text-white font-light">
+                    <Link to={"/tech"}>Blog Teknologi</Link>
                   </li>
                   <li>
                     <a href="" className="text-white font-light">

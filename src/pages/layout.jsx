@@ -37,13 +37,10 @@ export function Layout() {
               <i className="fa-solid fa-baseball-bat-ball"></i> Blog Sport
             </Link>
           </li>
-          <li>
-            <a
-              href="#"
-              className="flex justify-center items-center gap-3 text-sm"
-            >
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link to={"/tech"}>
               <i className="fa-solid fa-microchip"></i> Blog Teknologi
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -87,13 +84,10 @@ export function Layout() {
               <i className="fa-solid fa-baseball-bat-ball"></i> Blog Sport
             </Link>
           </li>
-          <li>
-            <a
-              href="#"
-              className="flex justify-center items-center gap-3 text-sm"
-            >
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link to={"/tech"}>
               <i className="fa-solid fa-microchip"></i> Blog Teknologi
-            </a>
+            </Link>
           </li>
           <li>
             <a
