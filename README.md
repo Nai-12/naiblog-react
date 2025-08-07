@@ -1,42 +1,55 @@
-# Blog Website
+# Website Berita
 
-Hello everyone, you need a news website that holds various kinds of news published by Antara, CNBC, CNN, and others.
+Hallo semua, Naitzz kali ini membuat sebuah project bernama Naiblog yang dimana digunakan sebagai web berita untuk semua orang yang di jadikan satu dari berbagai situs berita indonesia seperti Antara, CNBC, CNN, dan lainnya.
 
-In this project I use technology:
+Di project ini saya menggunakan:
 
 **React, TailwindCSS, Vite**
 
-## Features [ Comming Soon ]
+## Fitur
 
-- Light/Dark Theme
-- Search
-- There is also a weather forecast
+- Tema Gelap/Terang
+- Pencarian
+- Info cuaca hari ini
 - Responsive ✅
 
-## Installation
+❌ = Comming Soon
+✅ = Baru Rilis
 
-To deploy the web
+## Instalasi
 
-### Install Module First
+Ini cara untuk mendeploy web ini
+
+### Install module dahulu
 
 ```bash
  npm i
 ```
 
-To install all the modules needed by the project
+Untuk menginstall semua package yang diperlokan oleh project
 
-### Run the Web
+### Menjalankan website
 
 ```bash
 npm run dev
 ```
 
-This is the point for us to be able to see the results of the web that we have done, npm run dev itself is used for developing sessions so that it is easy when changing / modifying the project
+Command ini digunakan sebagai jalan untuk mereview web yang akan kalian edit, dengan begitu webiste dengan mudah akan diotak atik karena perubahanya akan dilakukan secara realtime
 
-## License
+```bash
+npm run build
+```
+
+Perintah ini digunakan untuk membangun aplikasi web frontend yang dioptimalkan untuk produksi
+
+```bash
+npm run preview
+```
+
+Dari namanya kita tau command ini digunakan sebagai menampilkan preview dari hasil build project
+
+## Lisensi
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-If there are problems you can contact me via naiblog349@gmail.com or can go to the [Issue] tab (https://github.com/Naitzz12/naiblog-new/issues)
-
-Translated with DeepL.com (free version)
+If there are problems you can contact me via nabail349@gmail.com or can go to the [Issue] tab (https://github.com/Naitzz12/naiblog-new/issues)
