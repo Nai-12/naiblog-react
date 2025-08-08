@@ -34,7 +34,7 @@ export function PageTech() {
   return (
     <div className="mt-32">
       <div className="flex justify-center items-center " id="pageTech">
-        <div className="xl:mx-10 relative flex justify-center items-center flex-wrap flex-col xl:flex-row gap-7">
+        <div className="xl:mx-10 relative flex justify-center items-start flex-wrap flex-col xl:flex-row gap-7">
           {tech.map((list) => (
             <div
               key={list.pubDate}

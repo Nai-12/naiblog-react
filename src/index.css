@@ -80,7 +80,7 @@ nav {
   }
 }
 
-#antara, #pageSport {
+#antara, #pageSport, #pageTech, #pageOtomotif {
   h1 {
     font-family: var(--font-montserrat);
   }

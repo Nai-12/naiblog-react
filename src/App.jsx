@@ -5,6 +5,8 @@ import React, { Suspense } from "react";
 import { Layout } from "./pages/layout";
 import { PageSport } from "./pages/pageSport";
 import { PageTech } from "./pages/pageTech";
+import { PageOtomotif } from "./pages/pageOtomotif";
+import { PageDunia } from "./pages/pageDunia";
 const MainPage = React.lazy(() => import("./components/MainPage"));
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           />
           <Route path="/sport" element={<PageSport />} />
           <Route path="/tech" element={<PageTech />} />
+          <Route path="/otomotif" element={<PageOtomotif />} />
+          <Route path="/dunia" element={<PageDunia />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

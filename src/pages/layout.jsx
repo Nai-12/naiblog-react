@@ -42,21 +42,15 @@ export function Layout() {
               <i className="fa-solid fa-microchip"></i> Blog Teknologi
             </Link>
           </li>
-          <li>
-            <a
-              href="#"
-              className="flex justify-center items-center gap-3 text-sm"
-            >
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link to={"/otomotif"}>
               <i className="fa-solid fa-car"></i> Blog Otomotif
-            </a>
+            </Link>
           </li>
-          <li>
-            <a
-              href="#"
-              className="flex justify-center items-center gap-3 text-sm"
-            >
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link to={"/dunia"}>
               <i className="fa-solid fa-earth-asia"></i> Blog Dunia
-            </a>
+            </Link>
           </li>
           <button
             onClick={toggleView}
@@ -89,21 +83,15 @@ export function Layout() {
               <i className="fa-solid fa-microchip"></i> Blog Teknologi
             </Link>
           </li>
-          <li>
-            <a
-              href="#"
-              className="flex justify-center items-center gap-3 text-sm"
-            >
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link to={"/otomotif"}>
               <i className="fa-solid fa-car"></i> Blog Otomotif
-            </a>
+            </Link>
           </li>
-          <li>
-            <a
-              href="#"
-              className="flex justify-center items-center gap-3 text-sm"
-            >
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link to={"/dunia"}>
               <i className="fa-solid fa-earth-asia"></i> Blog Dunia
-            </a>
+            </Link>
           </li>
           <button
             onClick={toggleView}

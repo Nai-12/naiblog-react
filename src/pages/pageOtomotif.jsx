@@ -3,24 +3,8 @@ import axios from "axios";
 import { url } from "../lib/url";
 import { Link } from "react-router-dom";
 
-export function PageSport() {
-  const [sport, setSport] = useState([]);
-
-  const urlEnd = [
-    "sindonews/sports/",
-    "antara/olahraga/",
-    "antara/bola/",
-    "antara/otomotif/",
-    "cnn/olahraga/",
-    "merdeka/olahraga/",
-    "merdeka/otomotif/",
-    "republika/bola/",
-    "sindonews/otomotif/",
-    "tempo/bola/",
-    "tempo/otomotif/",
-  ];
-  const urlRandomGet = urlEnd[Math.floor(Math.random() * urlEnd.length)];
-
+export function PageOtomotif() {
+  const [otomo, setOtomo] = useState([]);
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -35,12 +19,21 @@ export function PageSport() {
     return txt.charAt(0).toUpperCase() + txt.slice(1);
   }
 
+  const urlEnd = [
+    "antara/otomotif/",
+    "merdeka/otomotif/",
+    "sindonews/otomotif/",
+    "tempo/otomotif/",
+  ];
+
+  const urlRandomGet = urlEnd[Math.floor(Math.random() * urlEnd.length)];
+
   useEffect(() => {
     (async () => {
       try {
         const api = await axios.get(`${url()}${urlRandomGet}`);
         const response = await api.data;
-        setSport(response.data.posts);
+        setOtomo(response.data.posts);
       } catch (err) {
         console.log(err);
       }
@@ -49,9 +42,9 @@ export function PageSport() {
 
   return (
     <div className="mt-32">
-      <div className="flex justify-center items-center " id="pageSport">
+      <div className="flex justify-center items-center " id="pageOtomotif">
         <div className="xl:mx-10 relative flex justify-center items-start flex-wrap flex-col xl:flex-row gap-7">
-          {sport.map((list) => (
+          {otomo.map((list) => (
             <div
               key={list.pubDate}
               className="flex justify-center items-center flex-col relative w-10/12 xl:w-3/12"
