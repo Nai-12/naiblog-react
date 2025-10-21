@@ -1,6 +1,6 @@
 import { useState, Suspense } from "react";
 import { Link, Outlet } from "react-router-dom";
-import ListBerita from "../components/listBerita";
+import ListBerita from "../components/ListBerita";
 import img from "/logo.webp";
 
 export function Layout() {

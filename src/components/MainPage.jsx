@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Logolist } from "./LogoList";
 import Cnbc from "./news_list/cnbc";
 import Antara from "./news_list/antara";
-import { Footer } from "./footer";
+import { Footer } from "./Footer";
 import About from "./About";
 
 function MainPage() {
