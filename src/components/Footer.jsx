@@ -43,7 +43,9 @@ export function Footer() {
             </div>
             <div className="flex justify-start items-start flex-col gap-12 xl:justify-center xl:flex-row">
               <div>
-                <h1 className="font-bold mb-3 text-blue-100">Berita List</h1>
+                <h1 className="font-bold text-2xl mb-3 text-blue-100">
+                  Berita List
+                </h1>
                 <ul>
                   {list.map((lst) => (
                     <li key={lst.name}>
@@ -55,9 +57,9 @@ export function Footer() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-bold text-2xl mb-3 text-blue-100">
+                <h1 className="font-bold text-2xl mb-3 text-blue-100">
                   Blog Tema
-                </h4>
+                </h1>
                 <ul>
                   <li className="text-white font-light">
                     <Link to={"/sport"}>Blog Sport</Link>
@@ -81,7 +83,7 @@ export function Footer() {
           </div>
           <span className="w-[85%] h-0.5 bg-[#282828]"></span>
           <div className="w-[85%] flex justify-between items-center">
-            <h3 className="text-white">Naitzz &copy; 2024 - 2025</h3>
+            <p className="text-white">Naitzz &copy; 2024 - 2025</p>
             <div className=" flex justify-center items-center gap-5 text-2xl text-white">
               <i class="fa-brands fa-github"></i>
               <i class="fa-brands fa-instagram"></i>

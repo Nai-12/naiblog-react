@@ -95,8 +95,8 @@ function MainPage() {
         className="absolute top-[127rem] left-0 right-0 flex justify-center items-center sm:top-[140rem] md:top-[135rem] lg:top-[170rem] xl:top-[180rem]"
         id="reading"
       >
-        {/* <Antara />
-        <Cnbc />*/}
+        <Antara />
+        <Cnbc />
         <div className="absolute -bottom-[92rem] left-0 right-0 flex justify-center items-center">
           <a href="" className="py-2 px-7 text-black">
             Baca Berita Lainya
