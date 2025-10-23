@@ -1,13 +1,9 @@
 function About() {
   return (
-    <div
-      className="absolute top-[60rem] left-0 right-0 bottom-0 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:h-[80vh] before:w-full before:backdrop-blur-3xl before:-z-10 md:top-[70rem] xl:top-[80rem]"
-      id="about"
-    >
-      <span className="absolute hidden top-[8rem] -left-22 h-[15rem] w-[15rem] bg-blue-400 rounded-full -z-20 lg:block"></span>
+    <div className="absolute top-[80rem] left-0 right-0 bottom-0" id="about">
       <div className="flex justify-around items-center flex-row-reverse">
         <div className=" text-start relative">
-          <div className="flex justify-start items-start hidden">
+          <div className="flex justify-start items-start absolute -top-10 right-10 w-28">
             <p className="absolute text-[11px] -right-10 bg-[rgba(12_140_233)]/50 py-1 px-2.5 rounded-full gap-3 border-3 border-[#246fa4] md:text-[16px] xl:text-xs">
               Tentang Web ini
             </p>

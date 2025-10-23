@@ -43,9 +43,7 @@ export function Footer() {
             </div>
             <div className="flex justify-start items-start flex-col gap-12 xl:justify-center xl:flex-row">
               <div>
-                <h4 className="font-bold text-2xl mb-3 text-blue-100">
-                  Berita List
-                </h4>
+                <h1 className="font-bold mb-3 text-blue-100">Berita List</h1>
                 <ul>
                   {list.map((lst) => (
                     <li key={lst.name}>
