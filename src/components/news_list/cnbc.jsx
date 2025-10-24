@@ -20,7 +20,7 @@ function Cnbc() {
         console.log("Terdapat Error : " + e);
       }
     })();
-  });
+  }, [cnbc]);
   return (
     <div className="slider-container">
       <div className="absolute top-[50rem] left-7 right-7" id="antara">

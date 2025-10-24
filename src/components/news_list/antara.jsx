@@ -20,7 +20,7 @@ function Antara() {
         console.log("Terdapat Error : " + e);
       }
     })();
-  });
+  }, []);
 
   return (
     <div className="slider-container">
