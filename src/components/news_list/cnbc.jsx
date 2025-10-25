@@ -1,11 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { url } from "../../lib/url";
-import { Navigation, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, A11y } from "swiper/modules";
 
-import "swiper/css/navigation";
 import "swiper/css";
+import "swiper/css/navigation";
 
 function Cnbc() {
   const [cnbc, setCnbc] = useState([]);
@@ -20,15 +20,16 @@ function Cnbc() {
         console.log("Terdapat Error : " + e);
       }
     })();
-  }, [cnbc]);
+  }, []);
+
   return (
     <div className="slider-container">
-      <div className="absolute top-[50rem] left-7 right-7" id="antara">
-        <div className="mx-10">
+      <div className="absolute top-200 left-7 right-7" id="cnbc">
+        <div className="mx-10 relative">
           <img
             src="https://cdn.cnbcindonesia.com/cnbc/images/cnbc-logo.svg?v=6.5.3"
             alt=""
-            className="mb-10 ml-12 mr-12 md:ml-10 md:b-10"
+            className="mb-10 w-2xs md:ml-10 md:b-10"
           />
           <Swiper
             modules={[Navigation, A11y]}

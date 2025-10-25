@@ -92,12 +92,12 @@ function MainPage() {
       <About />
       <Logolist />
       <div
-        className="absolute top-[127rem] left-0 right-0 flex justify-center items-center sm:top-[140rem] md:top-[135rem] lg:top-[170rem] xl:top-[180rem]"
+        className="absolute top-508 left-0 right-0 flex justify-center items-center sm:top-560 md:top-540 lg:top-680 xl:top-720"
         id="reading"
       >
         <Antara />
         <Cnbc />
-        <div className="absolute -bottom-[92rem] left-0 right-0 flex justify-center items-center">
+        <div className="absolute -bottom-368 left-0 right-0 flex justify-center items-center">
           <a href="" className="py-2 px-7 text-black">
             Baca Berita Lainya
           </a>

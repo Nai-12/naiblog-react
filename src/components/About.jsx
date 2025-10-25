@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="absolute top-[80rem] left-0 right-0 bottom-0" id="about">
+    <div className="absolute top-320 left-0 right-0 bottom-0" id="about">
       <div className="flex justify-around items-center flex-row-reverse">
         <div className=" text-start relative">
           <div className="flex justify-start items-start absolute -top-10 right-10 w-28">
