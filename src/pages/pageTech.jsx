@@ -65,7 +65,7 @@ export function PageTech() {
         </div>
       </div>
       <div
-        className="mt-28 bg-[#181818] lg:top-[270rem] xl:top-[280rem] xl:rounded-tr-4xl xl:rounded-tl-4xl xl:mx-3"
+        className="mt-28 bg-[#181818] lg:top-1080 xl:top-1120 xl:rounded-tr-4xl xl:rounded-tl-4xl xl:mx-3"
         id="footer"
       >
         <footer className="flex justify-between items-start pl-10 flex-col gap-10 py-10 xl:items-center xl:px-10 xl:flex-col">

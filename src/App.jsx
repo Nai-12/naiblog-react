@@ -19,7 +19,7 @@ function App() {
             element={
               <Suspense
                 fallback={
-                  <span className=" flex justify-center items-center text-center h-[100vh]">
+                  <span className=" flex justify-center items-center text-center h-screen">
                     {" "}
                     Memuat guys..{" "}
                   </span>

@@ -1,16 +1,10 @@
 import { useState, Suspense } from "react";
 import { Link, Outlet } from "react-router-dom";
-import ListBerita from "../components/ListBerita";
 import img from "/logo.webp";
 
 export function Layout() {
-  const [listView, setListView] = useState(false);
   const [sidebar, setSidebar] = useState(false);
   const [nightMode, setNightMode] = useState(false);
-
-  const toggleView = () => {
-    setListView(!listView);
-  };
 
   const toggleSidebar = () => {
     setSidebar(!sidebar);
@@ -52,16 +46,6 @@ export function Layout() {
               <i className="fa-solid fa-earth-asia"></i> Blog Dunia
             </Link>
           </li>
-          <li>
-            <button
-              aria-label="Change"
-              onClick={toggleView}
-              className="flex justify-center items-center gap-3 text-sm cursor-pointer relative after:content-[''] after:absolute after:top-0 after:-right-2 after:bg-red-500 after:w-3 after:h-3 after:rounded-full after:animate-ping before:content-[''] before:absolute before:top-0 before:-right-2 before:bg-red-500 before:w-3 before:h-3 before:rounded-full"
-            >
-              <i className="fa-solid fa-tv"></i> Berita
-              <ListBerita isOpen={listView} />
-            </button>
-          </li>
         </ul>
 
         {/* Sidebar */}
@@ -95,16 +79,6 @@ export function Layout() {
             <Link to={"/dunia"}>
               <i className="fa-solid fa-earth-asia"></i> Blog Dunia
             </Link>
-          </li>
-          <li>
-            <button
-              aria-label="Change"
-              onClick={toggleView}
-              className="flex justify-center items-center gap-3 text-sm cursor-pointer relative after:content-[''] after:absolute after:top-0 after:-right-2 after:bg-red-500 after:w-3 after:h-3 after:rounded-full after:animate-ping before:content-[''] before:absolute before:top-0 before:-right-2 before:bg-red-500 before:w-3 before:h-3 before:rounded-full"
-            >
-              <i className="fa-solid fa-tv"></i> Berita
-              <ListBerita isOpen={listView} />
-            </button>
           </li>
         </ul>
         {/* Sidebar */}

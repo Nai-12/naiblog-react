@@ -85,9 +85,15 @@ export function Footer() {
           <div className="w-[85%] flex justify-between items-center">
             <p className="text-white">Naitzz &copy; 2024 - 2025</p>
             <div className=" flex justify-center items-center gap-5 text-2xl text-white">
-              <i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-facebook"></i>
+              <a href="https://github.com/Nai-12">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/naitzz__/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://web.facebook.com/profile.php?id=100088202771445">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
             </div>
           </div>
         </footer>

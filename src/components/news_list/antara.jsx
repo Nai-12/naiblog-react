@@ -35,7 +35,20 @@ function Antara() {
             modules={[Navigation, A11y]}
             pagination={{ clickable: true }}
             navigation
-            slidesPerView={4}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
+            }}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >

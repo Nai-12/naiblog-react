@@ -19,99 +19,120 @@
 nav {
   h1 {
     font-family: var(--font-playwrite-pl);
+    font-display: auto;
   }
 
   ul a {
     font-family: var(--font-poppins);
     color: var(--colo-bg);
+    font-display: auto;
     font-weight: 300;
   }
 
   ul button {
     font-family: var(--font-poppins);
     color: var(--colo-bg);
+    font-display: auto;
     font-weight: 300;
   }
 }
 
 .nm {
   font-family: var(--font-poppins);
+    font-display: auto;
 }
 
 #main {
   .rounded-full {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 
   h1 {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 
   .info {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 
   a {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 }
 
 #scroll {
   font-family: var(--font-poppins);
+    font-display: auto;
 }
 
 #about {
   p {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 
   h1 {
     font-family: var(--font-montserrat);
+    font-display: auto;
   }
 }
 
 #newsList {
   h1 {
     font-family: var(--font-montserrat);
+    font-display: auto;
   }
 
   p {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 }
 
 #antara, #pageSport, #pageTech, #pageOtomotif {
   h1 {
     font-family: var(--font-montserrat);
+    font-display: auto;
   }
 
   p {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 
   a {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 }
 
 #footer {
   h1, h2 {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 
   h4 {
     font-family: var(--font-montserrat);
+    font-display: auto;
   }
 
   h3 {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 
   ul {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 
   a {
     font-family: var(--font-poppins);
+    font-display: auto;
   }
 }

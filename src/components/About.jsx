@@ -1,13 +1,16 @@
 function About() {
   return (
-    <div className="absolute top-320 left-0 right-0 bottom-0" id="about">
+    <div
+      className="absolute top-240 left-0 right-0 bottom-0 md:top-270 lg:top-320"
+      id="about"
+    >
       <div className="flex justify-around items-center flex-row-reverse">
-        <div className=" text-start relative">
-          <div className="flex justify-start items-start absolute -top-10 right-10 w-28">
-            <p className="absolute text-[11px] -right-10 bg-[rgba(12_140_233)]/50 py-1 px-2.5 rounded-full gap-3 border-3 border-[#246fa4] md:text-[16px] xl:text-xs">
-              Tentang Web ini
-            </p>
-          </div>
+        <div className="text-start flex justify-center items-center lg:justify-end lg:items-end flex-col gap-3">
+          {/* <div className="flex justify-end items-end"> */}
+          <p className="text-[11px] bg-[rgba(12_140_233)]/50 py-1 px-2.5 rounded-full gap-3 border-3 border-[#246fa4] md:text-[16px] xl:text-xs">
+            Tentang Web ini
+          </p>
+          {/* </div> */}
           <h1 className="font-extrabold text-2xl lg:text-4xl">
             Informasi <span className="text-[rgba(12_140_233)]">Website</span>{" "}
             Ini

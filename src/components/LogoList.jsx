@@ -33,7 +33,7 @@ export function Logolist() {
   ];
 
   return (
-    <div className="absolute top-360 md:top-4000 lg:top-520" id="newsList">
+    <div className="absolute top-360 md:top-400 lg:top-520" id="newsList">
       <div className="flex justify-center items-center mb-10">
         <div className="w-80 text-center relative">
           <div className="flex justify-center items-center">
