@@ -7,11 +7,11 @@ function About() {
       <div className="flex justify-around items-center flex-row-reverse">
         <div className="text-start flex justify-center items-center lg:justify-end lg:items-end flex-col gap-3">
           {/* <div className="flex justify-end items-end"> */}
-          <p className="text-[11px] bg-[rgba(12_140_233)]/50 py-1 px-2.5 rounded-full gap-3 border-3 border-[#246fa4] md:text-[16px] xl:text-xs">
+          <p className="text-[11px] bg-[rgba(12_140_233)]/50 py-1 px-2.5 rounded-full gap-3 border-3 border-[#246fa4] md:text-[16px] xl:text-xs dark:text-[#f5f5f5]">
             Tentang Web ini
           </p>
           {/* </div> */}
-          <h1 className="font-extrabold text-2xl lg:text-4xl">
+          <h1 className="font-extrabold text-2xl lg:text-4xl dark:text-[#f5f5f5]">
             Informasi <span className="text-[rgba(12_140_233)]">Website</span>{" "}
             Ini
           </h1>
@@ -21,7 +21,7 @@ function About() {
         </div>
       </div>
       <div className="flex justify-start items-start flex-row-reverse py-10">
-        <div className="flex justify-center items-center flex-col gap-10 xl:justify-end xl:items-end xl:mr-[15%]">
+        <div className="flex justify-center items-center flex-col gap-10 xl:justify-end xl:items-end xl:mr-[15%] dark:text-[#f5f5f5]">
           <p className="w-[90%] text-center text-[10px] sm:text-sm xl:text-base xl:text-end xl:w-[50%]">
             Naiblog, adalah website yang digunakan untuk membaca berita dari
             berbagai website berita nasional, website ini diciptakan untuk

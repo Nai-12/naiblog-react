@@ -7,28 +7,15 @@ import { PageSport } from "./pages/pageSport";
 import { PageTech } from "./pages/pageTech";
 import { PageOtomotif } from "./pages/pageOtomotif";
 import { PageDunia } from "./pages/pageDunia";
-const MainPage = React.lazy(() => import("./components/MainPage"));
+// const MainPage = React.lazy(() => import("./components/MainPage"));
+import { MainPage } from "./components/MainPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route
-            index
-            element={
-              <Suspense
-                fallback={
-                  <span className=" flex justify-center items-center text-center h-screen">
-                    {" "}
-                    Memuat guys..{" "}
-                  </span>
-                }
-              >
-                <MainPage />
-              </Suspense>
-            }
-          />
+          <Route index element={<MainPage />} />
           <Route path="/sport" element={<PageSport />} />
           <Route path="/tech" element={<PageTech />} />
           <Route path="/otomotif" element={<PageOtomotif />} />

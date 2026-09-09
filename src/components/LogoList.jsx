@@ -37,11 +37,11 @@ export function Logolist() {
       <div className="flex justify-center items-center mb-10">
         <div className="w-80 text-center relative">
           <div className="flex justify-center items-center">
-            <p className="absolute text-[11px] -top-12 bg-[rgba(12_140_233)]/50 py-1 px-2.5 rounded-full gap-3 border-3 border-[#246fa4] md:text-[16px] xl:text-[14px]">
+            <p className="absolute text-[11px] -top-12 bg-[rgba(12_140_233)]/50 py-1 px-2.5 rounded-full gap-3 border-3 border-[#246fa4] md:text-[16px] xl:text-[14px] dark:text-[#f5f5f5]">
               Terima Kasih Kepada
             </p>
           </div>
-          <h1 className="font-bold text-3xl mb-6 lg:text-4xl">
+          <h1 className="font-bold text-3xl mb-6 lg:text-4xl dark:text-[#f5f5f5]">
             Penyedia <span className="text-[rgba(12_140_233)]">Berita</span>
           </h1>
           <hr className="w-44 ml-[70px] text-[#398eca]" />

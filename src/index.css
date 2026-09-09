@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --font-lato: "Lato", sans-serif;
   --font-ubuntu: "Ubuntu", sans-serif;
@@ -11,6 +13,7 @@
   --colo1: #162cb9;
   --colo-white: white;
   --colo-bg: #1f2021;
+  --dark-mode-bg: #121212;
   overflow-x: hidden;
   outline: hidden;
   scroll-behavior: smooth;
@@ -39,7 +42,7 @@ nav {
 
 .nm {
   font-family: var(--font-poppins);
-    font-display: auto;
+  font-display: auto;
 }
 
 #main {
@@ -66,7 +69,7 @@ nav {
 
 #scroll {
   font-family: var(--font-poppins);
-    font-display: auto;
+  font-display: auto;
 }
 
 #about {
@@ -93,7 +96,10 @@ nav {
   }
 }
 
-#antara, #pageSport, #pageTech, #pageOtomotif {
+#antara,
+#pageSport,
+#pageTech,
+#pageOtomotif {
   h1 {
     font-family: var(--font-montserrat);
     font-display: auto;
@@ -111,7 +117,8 @@ nav {
 }
 
 #footer {
-  h1, h2 {
+  h1,
+  h2 {
     font-family: var(--font-poppins);
     font-display: auto;
   }
