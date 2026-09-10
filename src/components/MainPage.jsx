@@ -4,6 +4,8 @@ import Antara from "./news_list/antara";
 import { Footer } from "./Footer";
 import About from "./About";
 
+
+
 export function MainPage() {
   return (
     <div className="bg-gray-950">
@@ -55,7 +57,7 @@ export function MainPage() {
           <div>
             <a
               href="#reading"
-              className="bg-blue-400 text-white py-1.5 px-3 rounded-lg text-[10px] sm:py-3 sm:px-7 sm:text-xs xl:py-3 xl:px-7"
+              className="bg-[#246fa4] text-white py-1.5 px-3 rounded-lg text-[10px] sm:py-3 sm:px-7 sm:text-xs xl:py-3 xl:px-7"
             >
               Baca Sekarang..
             </a>
@@ -70,23 +72,7 @@ export function MainPage() {
         <span className="h-[0.3px] w-full bg-black"></span>
         <p className="absolute text-[12px] bg-white px-3 py-1.5 flex justify-center items-center gap-1 border-2 border-black rounded-full md:text-[15px] xl:text-[16px] dark:bg-[#121212] dark:text-[#f5f5f5] dark:border-[#f5f5f5]">
           Scroll Kebawah{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width={24}
-            height={24}
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="#000"
-              d="M11.47 16.278a.75.75 0 0 0 1.06 0l2.25-2.249a.75.75 0 0 0-1.06-1.06L12 14.686l-1.72-1.719a.75.75 0 1 0-1.06 1.061zM12 9.055a.8.8 0 1 1 0-1.6a.8.8 0 0 1 0 1.6m-.8 2.016a.8.8 0 1 0 1.6 0a.8.8 0 0 0-1.6 0"
-            ></path>
-            <path
-              fill="#000"
-              fillRule="evenodd"
-              d="M12 2.001a7.5 7.5 0 0 0-7.5 7.5v5a7.5 7.5 0 0 0 15 0v-5a7.5 7.5 0 0 0-7.5-7.5m-6 7.5a6 6 0 1 1 12 0v5a6 6 0 0 1-12 0z"
-              clipRule="evenodd"
-            ></path>
-          </svg>
+          <i className="fa-solid fa-angles-down dark:text-[#f5f5f5]"></i>
         </p>
       </div>
 

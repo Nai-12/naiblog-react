@@ -25,7 +25,7 @@ export function Footer() {
         id="footer"
       >
         <footer className="flex justify-between items-start pl-10 flex-col gap-10 py-10 xl:items-center xl:px-10 xl:flex-col">
-          <div className="flex justify-between items-start pl-10 flex-col gap-10 py-10 xl:items-center xl:px-32 xl:flex-row">
+          <div className="flex justify-between items-start flex-col gap-10 py-10 lg:pl-10 xl:items-center xl:px-32 xl:flex-row">
             <div className="flex justify-start items-start flex-col gap-5 flex-1/5">
               <h1 className="font-bold text-6xl text-white">Naiblog</h1>
               <p className="text-md w-8/12 text-white font-light">

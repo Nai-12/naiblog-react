@@ -79,36 +79,53 @@ export function Layout() {
 
         {/* Sidebar */}
         <ul
-          className={`flex justify-center items-center gap-10 absolute flex-col top-0 bottom-0 left-0 right-0 w-[70%] h-[100vh] bg-white -z-10 transition-all duration-700 -translate-x-full opacity-0 ${
+          className={`flex justify-center items-center gap-10 absolute flex-col top-0 bottom-0 left-0 right-0 w-[70%] h-[100vh] bg-white -z-10 transition-all duration-700 -translate-x-full opacity-0 dark:bg-[#121212] ${
             sidebar ? "translate-x-0 opacity-100" : ""
           } xl:hidden`}
           id="sidebar"
         >
-          <li className="flex justify-center items-center gap-3 text-sm">
-            <Link to={"/"}>
-              <i className="fa-solid fa-house"></i> Beranda
-            </Link>
-          </li>
-          <li className="flex justify-center items-center gap-3 text-sm">
-            <Link to={"/sport"}>
-              <i className="fa-solid fa-baseball-bat-ball"></i> Blog Sport
-            </Link>
-          </li>
-          <li className="flex justify-center items-center gap-3 text-sm">
-            <Link to={"/tech"}>
-              <i className="fa-solid fa-microchip"></i> Blog Teknologi
-            </Link>
-          </li>
-          <li className="flex justify-center items-center gap-3 text-sm">
-            <Link to={"/otomotif"}>
-              <i className="fa-solid fa-car"></i> Blog Otomotif
-            </Link>
-          </li>
-          <li className="flex justify-center items-center gap-3 text-sm">
-            <Link to={"/dunia"}>
-              <i className="fa-solid fa-earth-asia"></i> Blog Dunia
-            </Link>
-          </li>
+          <li className="flex justify-center items-center gap-3 text-sm ">
+                      <Link to={"/"} className="flex justify-center items-center gap-1">
+                        <i className="fa-solid fa-house dark:text-[#f5f5f5]"></i>{" "}
+                        <p className="dark:text-[#f5f5f5]">Beranda</p>
+                      </Link>
+                    </li>
+                    <li className="flex justify-center items-center gap-3 text-sm">
+                      <Link
+                        to={"/sport"}
+                        className="flex justify-center items-center gap-1"
+                      >
+                        <i className="fa-solid fa-baseball-bat-ball dark:text-[#f5f5f5]"></i>{" "}
+                        <p className="dark:text-[#f5f5f5]">Blog Sport</p>
+                      </Link>
+                    </li>
+                    <li className="flex justify-center items-center gap-3 text-sm">
+                      <Link
+                        to={"/tech"}
+                        className="flex justify-center items-center gap-1"
+                      >
+                        <i className="fa-solid fa-microchip dark:text-[#f5f5f5]"></i>
+                        <p className="dark:text-[#f5f5f5]">Blog Teknologi</p>
+                      </Link>
+                    </li>
+                    <li className="flex justify-center items-center gap-3 text-sm">
+                      <Link
+                        to={"/otomotif"}
+                        className="flex justify-center items-center gap-1"
+                      >
+                        <i className="fa-solid fa-car dark:text-[#f5f5f5]"></i>
+                        <p className="dark:text-[#f5f5f5]">Blog Otomotif</p>
+                      </Link>
+                    </li>
+                    <li className="flex justify-center items-center gap-3 text-sm">
+                      <Link
+                        to={"/dunia"}
+                        className="flex justify-center items-center gap-1"
+                      >
+                        <i className="fa-solid fa-earth-asia dark:text-[#f5f5f5]"></i>
+                        <p className="dark:text-[#f5f5f5]">Blog Dunia</p>
+                      </Link>
+                    </li>
         </ul>
         {/* Sidebar */}
 

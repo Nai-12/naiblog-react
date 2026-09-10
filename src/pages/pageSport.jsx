@@ -5,22 +5,6 @@ import { Link } from "react-router-dom";
 
 export function PageSport() {
   const [sport, setSport] = useState([]);
-
-  const urlEnd = [
-    "sindonews/sports/",
-    "antara/olahraga/",
-    "antara/bola/",
-    "antara/otomotif/",
-    "cnn/olahraga/",
-    "merdeka/olahraga/",
-    "merdeka/otomotif/",
-    "republika/bola/",
-    "sindonews/otomotif/",
-    "tempo/bola/",
-    "tempo/otomotif/",
-  ];
-  const urlRandomGet = urlEnd[Math.floor(Math.random() * urlEnd.length)];
-
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -36,6 +20,20 @@ export function PageSport() {
   }
 
   useEffect(() => {
+    const urlEnd = [
+    "sindonews/sports/",
+    "antara/olahraga/",
+    "antara/bola/",
+    "antara/otomotif/",
+    "cnn/olahraga/",
+    "merdeka/olahraga/",
+    "merdeka/otomotif/",
+    "republika/bola/",
+    "sindonews/otomotif/",
+    "tempo/bola/",
+    "tempo/otomotif/",
+  ];
+  const urlRandomGet = urlEnd[Math.floor(Math.random() * urlEnd.length)];
     (async () => {
       try {
         const api = await axios.get(`${url()}${urlRandomGet}`);
@@ -63,10 +61,10 @@ export function PageSport() {
                 loading="lazy"
               />
               <div className="flex justify-center items-center flex-col gap-5 w-10/12 mt-10 lg:flex lg:justify-start lg:items-start">
-                <h1 className="font-bold text-center lg:text-start">
+                <h1 className="font-bold text-center lg:text-start dark:text-[#f5f5f5]">
                   {list.title}
                 </h1>
-                <p className="text-center text-sm lg:text-start">
+                <p className="text-center text-sm lg:text-start dark:text-[#f5f5f5]">
                   {list.description}
                 </p>
                 <a

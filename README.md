@@ -8,7 +8,7 @@ Di project ini saya menggunakan:
 
 ## Fitur
 
-- Tema Gelap/Terang ❌
+- Tema Gelap/Terang ✅
 - Pencarian ❌
 - Info cuaca hari ini ❌
 - Responsive ✅
