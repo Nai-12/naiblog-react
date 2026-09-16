@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { Suspense } from "react";
 
 // List Pages
 import { Layout } from "./pages/layout";
@@ -7,7 +6,6 @@ import { PageSport } from "./pages/pageSport";
 import { PageTech } from "./pages/pageTech";
 import { PageOtomotif } from "./pages/pageOtomotif";
 import { PageDunia } from "./pages/pageDunia";
-// const MainPage = React.lazy(() => import("./components/MainPage"));
 import { MainPage } from "./components/MainPage";
 
 function App() {
