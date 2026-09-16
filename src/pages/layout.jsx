@@ -2,6 +2,17 @@ import { useState, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 import img from "/logo.webp";
 
+// Icons
+import { MdBrightnessHigh, MdPhonelink } from "react-icons/md";
+import { FaMoon } from "react-icons/fa";
+import { GoHomeFill } from "react-icons/go";
+import { MdSportsCricket } from "react-icons/md";
+import { MdOutlinePhonelink } from "react-icons/md";
+import { IoCarSport } from "react-icons/io5";
+import { FaGlobeAsia } from "react-icons/fa";
+import { RiSidebarUnfoldFill } from "react-icons/ri";
+// Icons
+
 export function Layout() {
   const [sidebar, setSidebar] = useState(false);
   const [nightMode, setNightMode] = useState(() => {
@@ -35,7 +46,9 @@ export function Layout() {
         <ul className="hidden justify-around items-center-safe gap-10 relative lg:flex lg:gap-4 xl:gap-10">
           <li className="flex justify-center items-center gap-3 text-sm ">
             <Link to={"/"} className="flex justify-center items-center gap-1">
-              <i className="fa-solid fa-house dark:text-[#f5f5f5]"></i>{" "}
+              <i className="dark:text-[#f5f5f5]">
+                <GoHomeFill />
+              </i>{" "}
               <p className="dark:text-[#f5f5f5]">Beranda</p>
             </Link>
           </li>
@@ -44,7 +57,9 @@ export function Layout() {
               to={"/sport"}
               className="flex justify-center items-center gap-1"
             >
-              <i className="fa-solid fa-baseball-bat-ball dark:text-[#f5f5f5]"></i>{" "}
+              <i className="dark:text-[#f5f5f5]">
+                <MdSportsCricket />
+              </i>{" "}
               <p className="dark:text-[#f5f5f5]">Blog Sport</p>
             </Link>
           </li>
@@ -53,7 +68,9 @@ export function Layout() {
               to={"/tech"}
               className="flex justify-center items-center gap-1"
             >
-              <i className="fa-solid fa-microchip dark:text-[#f5f5f5]"></i>
+              <i className="dark:text-[#f5f5f5]">
+                <MdOutlinePhonelink />
+              </i>{" "}
               <p className="dark:text-[#f5f5f5]">Blog Teknologi</p>
             </Link>
           </li>
@@ -62,7 +79,9 @@ export function Layout() {
               to={"/otomotif"}
               className="flex justify-center items-center gap-1"
             >
-              <i className="fa-solid fa-car dark:text-[#f5f5f5]"></i>
+              <i className="dark:text-[#f5f5f5]">
+                <IoCarSport />
+              </i>{" "}
               <p className="dark:text-[#f5f5f5]">Blog Otomotif</p>
             </Link>
           </li>
@@ -71,7 +90,9 @@ export function Layout() {
               to={"/dunia"}
               className="flex justify-center items-center gap-1"
             >
-              <i className="fa-solid fa-earth-asia dark:text-[#f5f5f5]"></i>
+              <i className="dark:text-[#f5f5f5]">
+                <FaGlobeAsia />
+              </i>{" "}
               <p className="dark:text-[#f5f5f5]">Blog Dunia</p>
             </Link>
           </li>
@@ -79,74 +100,73 @@ export function Layout() {
 
         {/* Sidebar */}
         <ul
-          className={`flex justify-center items-center gap-10 absolute flex-col top-0 bottom-0 left-0 right-0 w-[70%] h-[100vh] bg-white -z-10 transition-all duration-700 -translate-x-full opacity-0 dark:bg-[#121212] ${
+          className={`flex justify-center items-center gap-10 absolute flex-col top-0 bottom-0 left-0 right-0 w-[60%] h-[100vh] bg-white -z-10 transition-all duration-700 -translate-x-full opacity-0 dark:bg-[#121212] ${
             sidebar ? "translate-x-0 opacity-100" : ""
           } xl:hidden`}
           id="sidebar"
         >
           <li className="flex justify-center items-center gap-3 text-sm ">
-                      <Link to={"/"} className="flex justify-center items-center gap-1">
-                        <i className="fa-solid fa-house dark:text-[#f5f5f5]"></i>{" "}
-                        <p className="dark:text-[#f5f5f5]">Beranda</p>
-                      </Link>
-                    </li>
-                    <li className="flex justify-center items-center gap-3 text-sm">
-                      <Link
-                        to={"/sport"}
-                        className="flex justify-center items-center gap-1"
-                      >
-                        <i className="fa-solid fa-baseball-bat-ball dark:text-[#f5f5f5]"></i>{" "}
-                        <p className="dark:text-[#f5f5f5]">Blog Sport</p>
-                      </Link>
-                    </li>
-                    <li className="flex justify-center items-center gap-3 text-sm">
-                      <Link
-                        to={"/tech"}
-                        className="flex justify-center items-center gap-1"
-                      >
-                        <i className="fa-solid fa-microchip dark:text-[#f5f5f5]"></i>
-                        <p className="dark:text-[#f5f5f5]">Blog Teknologi</p>
-                      </Link>
-                    </li>
-                    <li className="flex justify-center items-center gap-3 text-sm">
-                      <Link
-                        to={"/otomotif"}
-                        className="flex justify-center items-center gap-1"
-                      >
-                        <i className="fa-solid fa-car dark:text-[#f5f5f5]"></i>
-                        <p className="dark:text-[#f5f5f5]">Blog Otomotif</p>
-                      </Link>
-                    </li>
-                    <li className="flex justify-center items-center gap-3 text-sm">
-                      <Link
-                        to={"/dunia"}
-                        className="flex justify-center items-center gap-1"
-                      >
-                        <i className="fa-solid fa-earth-asia dark:text-[#f5f5f5]"></i>
-                        <p className="dark:text-[#f5f5f5]">Blog Dunia</p>
-                      </Link>
-                    </li>
+            <Link to={"/"} className="flex justify-center items-center gap-1">
+              <i className="dark:text-[#f5f5f5]">
+                <GoHomeFill />
+              </i>{" "}
+              <p className="dark:text-[#f5f5f5]">Beranda</p>
+            </Link>
+          </li>
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link
+              to={"/sport"}
+              className="flex justify-center items-center gap-1"
+            >
+              <i className="dark:text-[#f5f5f5]">
+                <MdSportsCricket />
+              </i>{" "}
+              <p className="dark:text-[#f5f5f5]">Blog Sport</p>
+            </Link>
+          </li>
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link
+              to={"/tech"}
+              className="flex justify-center items-center gap-1"
+            >
+              <i className="dark:text-[#f5f5f5]">
+                <MdOutlinePhonelink />
+              </i>{" "}
+              <p className="dark:text-[#f5f5f5]">Blog Teknologi</p>
+            </Link>
+          </li>
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link
+              to={"/otomotif"}
+              className="flex justify-center items-center gap-1"
+            >
+              <i className="dark:text-[#f5f5f5]">
+                <IoCarSport />
+              </i>{" "}
+              <p className="dark:text-[#f5f5f5]">Blog Otomotif</p>
+            </Link>
+          </li>
+          <li className="flex justify-center items-center gap-3 text-sm">
+            <Link
+              to={"/dunia"}
+              className="flex justify-center items-center gap-1"
+            >
+              <i className="dark:text-[#f5f5f5]">
+                <FaGlobeAsia />
+              </i>{" "}
+              <p className="dark:text-[#f5f5f5]">Blog Dunia</p>
+            </Link>
+          </li>
         </ul>
         {/* Sidebar */}
 
-        <div className="flex justify-center items-center gap-7">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width={26}
-            height={26}
-            viewBox="0 0 24 24"
-            className="cursor-pointer lg:hidden"
+        <div className="flex justify-center items-center gap-3">
+          <i
+            className="cursor-pointer text-3xl dark:text-[#f5f5f5] lg:hidden"
             onClick={toggleSidebar}
-            id="burger"
           >
-            <path
-              fill="none"
-              stroke="#000"
-              strokeLinecap="round"
-              strokeWidth={1.5}
-              d="M4 7h3m13 0h-9m9 10h-3M4 17h9m-9-5h16"
-            ></path>
-          </svg>
+            <RiSidebarUnfoldFill />
+          </i>
           <div className="nm">
             <button
               aria-label="Change"
@@ -155,7 +175,9 @@ export function Layout() {
               }`}
               onClick={toggleNightMode}
             >
-              <i className="fa-solid fa-moon"></i>
+              <i>
+                <FaMoon />
+              </i>
             </button>
             <button
               aria-label="Change"
@@ -164,7 +186,9 @@ export function Layout() {
               }`}
               onClick={toggleNightMode}
             >
-              <i className="fa-solid fa-sun"></i>
+              <i>
+                <MdBrightnessHigh />
+              </i>
             </button>
           </div>
         </div>

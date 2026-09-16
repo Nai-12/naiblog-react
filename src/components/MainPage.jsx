@@ -3,8 +3,7 @@ import Cnbc from "./news_list/cnbc";
 import Antara from "./news_list/antara";
 import { Footer } from "./Footer";
 import About from "./About";
-
-
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export function MainPage() {
   return (
@@ -85,20 +84,12 @@ export function MainPage() {
         <Antara />
         <Cnbc />
         <div className="absolute -bottom-368 left-0 right-0 flex justify-center items-center">
-          <a href="" className="py-2 px-7 text-black dark:text-[#f5f5f5]">
+          <a href="" className="py-2 px-2 text-black dark:text-[#f5f5f5]">
             Baca Berita Lainya
           </a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width={24}
-            height={24}
-            viewBox="0 0 1024 1024"
-          >
-            <path
-              fill="#000"
-              d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"
-            ></path>
-          </svg>
+          <i className="dark:text-[#f5f5f5]">
+            <FaArrowRightLong />
+          </i>
         </div>
       </div>
 
