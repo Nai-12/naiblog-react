@@ -42,67 +42,27 @@ export function Layout() {
       <nav
         className={`fixed left-0 right-0 top-0 backdrop-blur-2xl flex justify-between items-center z-20 px-5 sm:px-7 lg:justify-between lg:mx-0 xl:px-12 xl:justify-around`}
       >
-        <img src={img} alt="" loading="lazy" className="w-16 md:w-20 lg:w-24" />
-        <ul className="hidden justify-around items-center-safe gap-10 relative lg:flex lg:gap-4 xl:gap-10">
-          <li className="flex justify-center items-center gap-3 text-sm ">
-            <Link to={"/"} className="flex justify-center items-center gap-1">
-              <i className="dark:text-[#f5f5f5]">
-                <GoHomeFill />
-              </i>{" "}
-              <p className="dark:text-[#f5f5f5]">Beranda</p>
-            </Link>
-          </li>
-          <li className="flex justify-center items-center gap-3 text-sm">
-            <Link
-              to={"/sport"}
-              className="flex justify-center items-center gap-1"
-            >
-              <i className="dark:text-[#f5f5f5]">
-                <MdSportsCricket />
-              </i>{" "}
-              <p className="dark:text-[#f5f5f5]">Blog Sport</p>
-            </Link>
-          </li>
-          <li className="flex justify-center items-center gap-3 text-sm">
-            <Link
-              to={"/tech"}
-              className="flex justify-center items-center gap-1"
-            >
-              <i className="dark:text-[#f5f5f5]">
-                <MdOutlinePhonelink />
-              </i>{" "}
-              <p className="dark:text-[#f5f5f5]">Blog Teknologi</p>
-            </Link>
-          </li>
-          <li className="flex justify-center items-center gap-3 text-sm">
-            <Link
-              to={"/otomotif"}
-              className="flex justify-center items-center gap-1"
-            >
-              <i className="dark:text-[#f5f5f5]">
-                <IoCarSport />
-              </i>{" "}
-              <p className="dark:text-[#f5f5f5]">Blog Otomotif</p>
-            </Link>
-          </li>
-          <li className="flex justify-center items-center gap-3 text-sm">
-            <Link
-              to={"/dunia"}
-              className="flex justify-center items-center gap-1"
-            >
-              <i className="dark:text-[#f5f5f5]">
-                <FaGlobeAsia />
-              </i>{" "}
-              <p className="dark:text-[#f5f5f5]">Blog Dunia</p>
-            </Link>
-          </li>
-        </ul>
+        <div className="flex justify-center items-center">
+          <img
+            src={img}
+            alt=""
+            loading="lazy"
+            className="w-16 md:w-20 lg:w-24"
+          />
+          <input
+            type="search"
+            name="berita"
+            id="berita"
+            placeholder="Cari berita"
+            className="dark:text-[#f5f5f5] focus:outline-none border-2 border-[#246fa4] px-4 py-1 rounded-2xl w-[100%]"
+          />
+        </div>
 
         {/* Sidebar */}
         <ul
           className={`flex justify-center items-center gap-10 absolute flex-col top-0 bottom-0 left-0 right-0 w-[60%] h-[100vh] bg-white -z-10 transition-all duration-700 -translate-x-full opacity-0 dark:bg-[#121212] ${
             sidebar ? "translate-x-0 opacity-100" : ""
-          } xl:hidden`}
+          } xl:w-[20%]`}
           id="sidebar"
         >
           <li className="flex justify-center items-center gap-3 text-sm ">
@@ -162,7 +122,7 @@ export function Layout() {
 
         <div className="flex justify-center items-center gap-3">
           <i
-            className="cursor-pointer text-3xl dark:text-[#f5f5f5] lg:hidden"
+            className="cursor-pointer text-3xl dark:text-[#f5f5f5]"
             onClick={toggleSidebar}
           >
             <RiSidebarUnfoldFill />
