@@ -66,7 +66,11 @@ export function Layout() {
           id="sidebar"
         >
           <li className="flex justify-center items-center gap-3 text-sm ">
-            <Link to={"/"} className="flex justify-center items-center gap-1">
+            <Link
+              to={"/"}
+              onClick={toggleSidebar}
+              className="flex justify-center items-center gap-1"
+            >
               <i className="dark:text-[#f5f5f5]">
                 <GoHomeFill />
               </i>{" "}
@@ -76,6 +80,7 @@ export function Layout() {
           <li className="flex justify-center items-center gap-3 text-sm">
             <Link
               to={"/sport"}
+              onClick={toggleSidebar}
               className="flex justify-center items-center gap-1"
             >
               <i className="dark:text-[#f5f5f5]">
@@ -87,6 +92,7 @@ export function Layout() {
           <li className="flex justify-center items-center gap-3 text-sm">
             <Link
               to={"/tech"}
+              onClick={toggleSidebar}
               className="flex justify-center items-center gap-1"
             >
               <i className="dark:text-[#f5f5f5]">
@@ -98,6 +104,7 @@ export function Layout() {
           <li className="flex justify-center items-center gap-3 text-sm">
             <Link
               to={"/otomotif"}
+              onClick={toggleSidebar}
               className="flex justify-center items-center gap-1"
             >
               <i className="dark:text-[#f5f5f5]">
@@ -109,6 +116,7 @@ export function Layout() {
           <li className="flex justify-center items-center gap-3 text-sm">
             <Link
               to={"/dunia"}
+              onClick={toggleSidebar}
               className="flex justify-center items-center gap-1"
             >
               <i className="dark:text-[#f5f5f5]">
